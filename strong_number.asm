@@ -11,7 +11,7 @@ segment .text
 main:
 	
 	;-------------------------------------------------------------------;
-	;cuenta cifras :num el numero a contar, resultado sale en ebx
+	;count digits :num is the number to be counted, result in ebx
 	xor ebx,ebx
 	xor eax,eax
 	mov ecx,10
@@ -38,7 +38,7 @@ main:
 		mov eax,DWORD[n]
 		mov esi,0
 	;-------------------------------------------------------------------;
-	;factorial: n el numero a hacer el factorial, respuesta en eax
+	;factorial: n is the argument of the factorial, resut in eax
 		xor edx,edx
 		mov ebx,10
 		div ebx
